@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+/*导航栏nav*/
+.apple-nav{
+    position: relative;
+    display: block;
+    height: 44px;
+    background: rgba(0,0,0,0.8);
+    font-size: 18px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
+}
+.apple-nav .nav-body{
+    cursor: default;
+    height: 44px;
+    font-size: 16px;
+    text-align: justify;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 1000;
+}
+.apple-nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: block;
+    transition: transform 0.1s linear;
+    -webkit-transition: -webkit-transform 0.1s linear;
+}
+.nav-body ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-body>ul>li{
+    height: 44px;
+    text-align: center;
+    width: 9.5%;
+    display: inline-block;
+}
+.nav-body>ul>li>a{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+    color: #fff;
+    display: inline-block;
+    height: 44px;
+    vertical-align: middle;
+    line-height: 44px;
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.apple-nav ul li a:hover,.apple-nav ul li a.active{
+    opacity: .65;
+    filter: alpha(opacity=65);
+}
+.nav-body-brand a{
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url('../images/nav-img/image_large.svg');
+    background-position: center center;
+    width: 20px;
+}
+.nav-body-search a{
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url('../images/nav-img/image_large_search.svg');
+    background-position: center center;
+    width: 20px;
+}
+.nav-body-shop a{
+    background-repeat: no-repeat;
+    background-size: 18px 44px;
+    background-image: url('../images/nav-img/image_large_shop.svg');
+    background-position: center center;
+    width: 20px;
+}
+.nav-header{
+    overflow: hidden;
+    cursor: default;
+    height: 44px;
+    font-size: 16px;
+    text-align: justify;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.nav-header ul li{
+    height: 44px;
+    width: 44px;
+    display: inline-block;
+}
+.nav-header ul li a{
+    display: inline-block;
+    height: 44px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.nav-header .nav-body-brand{
+    width: 100%;
+    text-align: center;
+}
+.nav-header .nav-body-shop{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav-header .nav-toggle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    border-bottom: none;
+}
+.nav-toggle-btn{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    margin:0;
+    cursor: pointer;
+    -webkit-transition:opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),-webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition:opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99),-webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-tap-highlight-color:transparent;
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+.nav-toggle-btn:hover,
+.nav-toggle-btn:focus,
+.nav-toggle-btn:active {
+    opacity: .65;
+    filter: alpha(opacity=65);
+}
+.nav-toggle-btn>span{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+}
+.nav-toggle-btn .icon-bar-top{
+    top: 23px;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+.nav-toggle-btn .icon-bar{
+    display: block;
+    width: 17px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 16px;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0.2s;
+}
+.nav-toggle-btn .icon-bar-bottom{
+    bottom: 20px;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.ser-wrapper{
+    font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
+    width: 100%;
+    background-color:#000;
+    display: none;
+    overflow-y:auto;
+    /*padding-bottom: 50px;*/
+}
+.ser-btn-wrapper{
+    width: 85%;
+    margin: 0 auto;
+    height: 44px;
+}
+.ser-btn{
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url('../images/nav-img/image_large_search.svg');
+    background-position: left center;
+    padding-left: 30px;
+    font-size: 17px;
+    outline: none;
+    height: 44px;
+    border-bottom: 1px solid #fff;
+    font-weight: 100;
+    background-color: #000;
+}
+.ser-list h3{
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #999;
+    cursor: text;
+}
+.ser-list ul{
+    list-style: none;
+}
+.ser-list ul li{
+    height: 44px;
+    border-bottom: 1px solid #333;
+}
+.ser-list ul li a{
+    color:#ccc;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+    width: 100%;
+    line-height: 44px;
+}
+.ser-list ul li a:hover{
+    color: #6bf;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.apple-nav .glyphicon-chevron-up{
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    color: #fff;
+}
+.nav-header .nav-body-brand{
+    /*position: absolute;*/
+    /*width: 44px;*/
+    /*right: 40%;*/
+    position: absolute;
+    width: 48px;
+    top: 0;
+    left: 50%;
+    margin-left: -24px;
+}
+.nav-header .nav-body-brand a{
+    vertical-align:middle;
+}
+#ser-close-toggle{
+    background: none !important;
+    position: absolute;
+    left: 48.5%;
+    top: 0;
+    display: none;
+}
+.ser-apple{
+    transition:transform 2s linear;
+}
+
+@media (min-width: 1200px){
+    .apple-nav .container-fluid{
+        width: 1170px;
+    }
+}
+@media (max-width: 900px) {
+    .nav-body>ul>li{
+        width: 9.2%;
+    }
+}
+@media (max-width: 767px) {
+    .nav-body{
+        background: #000;
+        height: auto !important;
+        overflow-y:auto;
+        /*box-sizing: content-box;*/
+        /*padding-bottom: 50px;*/
+    }
+    .nav-body>ul>li{
+        width: 100%;
+    }
+    .apple-nav .container-fluid{
+        padding: 0;
+    }
+    .nav-body>ul>li>a{
+        font-size:17px;
+        width: 85%;
+        margin:0 auto;
+        display: block;
+        border-bottom:1px solid #333;
+    }
+    .nav-body>ul>li{
+        text-align: left;
+    }
+    .nav-body>ul>li:nth-child(2){
+        margin-top:20px;
+    }
+    .nav-body>ul>li:nth-child(9){
+        margin-bottom: 50px;
+    }
+    .nav-body>ul{
+        overflow-y:auto;
+        background: #000;
+        display: none;
+        transition: transform 0.8s ease-out;
+        -webkit-transition: -webkit-transform 0.8s ease-out;
+        transform-origin: top;
+        -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+        transform:rotateX(90deg);
+        -webkit-transform:rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .ser-wrapper .ser-list>ul>li:last-child{
+        margin-bottom: 50px;
+    }
+    .nav-header .nav-body-shop{
+        transition: transform 0.3s linear;
+        -webkit-transition: -webkit-transform 0.3s linear;
+    }
+    .nav-body-search a{
+        background-position:left center;
+        padding-left: 30px;
+        cursor: text !important;
+        border-bottom:1px solid #fff !important;
+    }
+    .nav-body-search a:hover{
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+    }
+}
+/*-导航栏nav*/

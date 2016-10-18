@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/*公用样式*/
+body{
+    /*overflow-x:hidden;*/
+    overflow-y:auto;
+    background: none;
+    min-width:340px;
+}
+/*-公用样式*/
+
+
+/*轮播*/
+.showBanner{
+    font-family: "Microsoft YaHei", "微软雅黑", Tahoma, Helvetica;
+}
+.showBanner .carousel{
+}
+.showBanner .carousel .item{
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:auto 100%;
+    max-height: 520px;
+    min-height: 500px;
+    width: 100%;
+    cursor: pointer;
+}
+.showBanner .carousel .banner-1{
+    background-image: url('../images/carousel-img/iphone_large.jpg');
+    background-color: #000;
+}
+.showBanner .carousel .banner-2{
+    background-image: url("../images/carousel-img/watch_large.jpg");
+    background-color: #f3f3f3 !important;
+}
+.showBanner .carousel .banner-3{
+    background-image: url("../images/carousel-img/airpods_large.jpg");
+    background-color: #fff;
+}
+.showBanner .carousel .banner-4{
+    background-image: url("../images/carousel-img/event_large.jpg");
+    background-color: #000;
+}
+.showBanner .car-cap-top{
+    position: absolute;
+    top: 30px;
+    left: 45%;
+}
+.showBanner .banner-1 .car-cap-top .iphone-logo{
+    height: 30%;
+}
+.showBanner .banner-1 .car-cap-top .iphone-txt-des{
+    font-size: 40px;
+    color:#fff;
+    font-weight: 100;
+    margin-left: -13%;
+    margin-top:10px;
+}
+.showBanner .banner-2 .car-cap-top{
+    left: 43%;
+}
+.showBanner .banner-2 .carousel-caption .watch-des{
+    color:#333;
+    font-size: 30px;
+    text-shadow: none;
+    font-weight: 100;
+}
+.showBanner .banner-3 .car-cap-top .aripods-txt{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+}
+.showBanner .banner-3 .car-cap-top .aripods-txt-des{
+    font-size: 32px;
+    font-weight: 100;
+    margin-left: -33%;
+}
+.showBanner .banner-4 .car-cap-top{
+    left: 38%;
+}
+.showBanner .banner-4 .car-cap-top .event-txt{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+.showBanner .banner-4 .car-cap-top .event-txt-des{
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+}
+.showBanner .banner-4 .car-cap-middle{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -45px;
+    margin-top: -45px;
+}
+.showBanner .banner-4 .car-cap-middle .event-sign{
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    background-image: url('../images/carousel-img/play_button_large.png');
+    position: absolute;
+    background-color: #1e1e1e;
+    background-color: rgba(30,30,30,0.7);
+    border-radius: 45px;
+    -webkit-transition: background-color 0.25s linear;
+    transition: background-color 0.25s linear;
+}
+
+.showBanner .banner-4 .car-cap-middle .event-sign:hover{
+    background-color: rgba(30,30,30,0.85);
+}
+
+.showBanner .carousel:hover .carousel-control{
+    display: block;
+}
+
+.showBanner .carousel-control{
+    top: 42%;
+    width: 63px;
+    height: 63px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: rgba(180,180,180,0.6);
+    color: #848484;
+    background-image: none !important;
+    display: none;
+}
+.showBanner .carousel-control span{
+    position: absolute;
+    top: 25px !important;
+    font-size: 30px;
+}
+.showBanner .carousel-control.left span{
+    left: 25px !important;
+}
+.showBanner .carousel-control.right span{
+    left: 15px !important;
+}
+
+.carousel-indicators li,.carousel-indicators .active{
+    border: none;
+    background: none;
+    width: 50px !important;
+    height: 22px !important;
+    position: relative;
+    margin:0;
+    padding: 0;
+}
+.carousel-indicators .active a{
+    background-color: rgba(128,128,128,1);
+}
+.carousel-indicators li a{
+    position: absolute;
+    left: 0;
+    top:46%;
+    display: inline-block;
+    width: 48px;
+    height: 2px;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    box-sizing: content-box;
+    background-color: rgba(128,128,128,0.2);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1068px){
+    .showBanner .carousel .item{
+        max-height: 460px;
+        min-height: 500px;
+    }
+}
+@media only screen and (max-width: 735px) {
+    .showBanner .carousel .item{
+        max-height: 380px;
+        min-height: 350px;
+        background-size:auto 100%;
+    }
+    .showBanner .carousel .banner-2{
+        background-image: url("../images/carousel-img/watch_medium.jpg");
+        background-color: #fff;
+    }
+    .showBanner .carousel .banner-4{
+        background-image: url("../images/carousel-img/event_medium.jpg");
+        background-size:90% auto;
+    }
+    .showBanner .banner-1 .car-cap-top .iphone-logo{
+        height: 18px;
+    }
+    .showBanner .banner-1 .car-cap-top .iphone-txt-des {
+        font-size: 30px;
+    }
+    .showBanner .banner-2 .car-cap-top .watch-logo{
+        width:111px;
+    }
+    .showBanner .banner-2 .car-cap-top{
+        left: 40%;
+    }
+    .showBanner .carousel .banner-2{
+        background-size:80% auto;
+    }
+    .showBanner .banner-2 .carousel-caption .watch-des{
+        font-size: 25px;
+    }
+    .showBanner .banner-3 .car-cap-top{
+        left:40%;
+    }
+    .showBanner .banner-3 .car-cap-top .aripods-txt{
+        font-size: 25px;
+    }
+    .showBanner .banner-3 .car-cap-top .aripods-txt-des{
+        font-size: 28px;
+    }
+    .showBanner .banner-4 .car-cap-top{
+        left: 35%;
+    }
+    .showBanner .banner-4 .car-cap-top .event-txt{
+        font-size: 22px;
+    }
+    .showBanner .banner-4 .car-cap-top .event-txt-des{
+        font-size: 24px;
+    }
+    .showBanner .carousel-control span{
+        font-size: 30px;
+    }
+}
+@media (max-width: 485px) {
+    .showBanner .carousel .banner-2{
+        background-size:100% auto;
+    }
+    .showBanner .carousel .banner-4{
+        background-size:140% auto;
+    }
+    .showBanner .banner-2 .car-cap-top{
+        left: 35%;
+    }
+    .showBanner .banner-3 .car-cap-top .aripods-txt{
+        font-size: 18px;
+    }
+    .showBanner .banner-3 .car-cap-top{
+        left:38%;
+    }
+    .showBanner .banner-3 .car-cap-top .aripods-txt{
+        font-size: 20px;
+    }
+    .showBanner .banner-3 .car-cap-top .aripods-txt-des{
+        font-size: 22px;
+        margin-left: -38%;
+    }
+    .showBanner .banner-4 .car-cap-top{
+        top:10px;
+        left: 30%;
+    }
+    .showBanner .banner-4 .car-cap-top .event-txt{
+        font-size: 21px;
+    }
+    .showBanner .banner-4 .car-cap-top .event-txt-des{
+        font-size: 23px;
+    }
+    .showBanner .banner-4 .car-cap-middle .event-sign{
+        width: 74px;
+        height: 74px;
+        background-size: 74px 74px;
+        background-repeat: no-repeat;
+        background-image: url('../images/carousel-img/play_button_small.png');
+    }
+    .carousel-indicators{
+        width: 70%;
+    }
+}
+/*--轮播*/
+
+/*产品图片展示区*/
+.product-show .container-fluid{
+    padding: 0;
+}
+.product-show ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.product-show ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.product-show ul li{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.product-show ul li:last-child{
+    border-right: none;
+}
+.product-show .product-img{
+    height: 200px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:360px 200px;;
+}
+.product-show .pro1{
+    background-image: url("../images/product-img/macos_sierra_large.jpg");
+}
+.product-show .pro2{
+    background-image: url("../images/product-img/ios_large.jpg");
+}
+.product-show .pro3{
+    background-image: url("../images/product-img/watchos_large.jpg");
+}
+.product-show .pro4{
+    background-image: url("../images/product-img/business_deloitte_large.jpg");
+}
+@media (max-width: 992px){
+    .product-show .product-img{
+        background-size: 640px 200px;
+    }
+    .product-show .pro1{
+        background-image: url("../images/product-img/macos_sierra_small.jpg");
+    }
+    .product-show .pro2{
+        background-image: url("../images/product-img/ios_small.jpg");
+    }
+    .product-show .pro3{
+        background-image: url("../images/product-img/watchos_small.jpg");
+    }
+    .product-show .pro4{
+        background-image: url("../images/product-img/business_deloitte_small.jpg");
+    }
+    .product-show ul li:nth-child(2n){
+        border-right: none;
+    }
+
+}
+@media (max-width: 767px) {
+    .product-show .product-img{
+        background-size: 736px 200px;
+    }
+    .product-show ul li{
+        border-right: none;
+    }
+}
+/*--产品图片展示区*/
+
+/*说明区*/
+.redcross-banner-wrapper{
+    height: 66px;
+    line-height: 66px;
+}
+.redcross-banner-wrapper .txt-box{
+    height: 26px;
+    font-size: 17px;
+    line-height: 23px;
+    padding-left:20px;
+    margin-top: 20px;
+    border-left:1px solid #d6d6d6;
+}
+.redcross-banner-wrapper .txt-box .help-des{
+    margin-left:5px;
+}
+.redcross-banner-wrapper .txt-box .help-des:after{
+    content: ">";
+    font-size:14px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.redcross-banner-wrapper .txt-box .help-des:after:hover{
+    text-decoration: none;
+}
+.redcross-banner-wrapper .txt-box .help-des:hover{
+    color: #337ab7;
+}
+@media (max-width: 767px) {
+    .redcross-banner-wrapper .container-fluid{
+        padding:0;
+    }
+    .redcross-banner-wrapper .img-box{
+        text-align: center;
+    }
+    .redcross-banner-wrapper .txt-box{
+        text-align: center;
+        border: none;
+        padding:0;
+        margin: 0;
+    }
+    .redcross-banner-wrapper{
+        height: 92px;
+    }
+}
+/*--说明区*/
