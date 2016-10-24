@@ -73,7 +73,7 @@ function navToggle() {
         $(".ser-wrapper").height($(window).height());
         $(".nav-body>ul").height($(window).height());
         $("body").height($(window).height());
-        $("body").css({"overflow-y":"hidden"})
+        $("body").css({"overflow-y":"hidden",'position':'fixed'})
 
         $(this).css({"transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)","-ms-transform":"rotate(90deg)"});
         $(this).find(".icon-bar-top").css({"transform":"rotate(45deg)","-webkit-transform":"rotate(45deg)","-ms-transform":"rotate(45deg)"});
@@ -114,7 +114,7 @@ function navToggle() {
         });
 
         $("body").height($(document).height());
-        $("body").css({"overflow-y":"auto"});
+        $("body").css({"overflow-y":"auto",'position':'static'});
         $(".nav-body>ul").height(44);
 
 
