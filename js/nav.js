@@ -73,7 +73,7 @@ function navToggle() {
         $(".ser-wrapper").height($(window).height());
         $(".nav-body>ul").height($(window).height());
         $("body").height($(window).height());
-        $("body").css({"overflow-y":"hidden",'position':'fixed'})
+        $("body").css({"overflow-y":"hidden",'position':'fixed'});
 
         $(this).css({"transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)","-ms-transform":"rotate(90deg)"});
         $(this).find(".icon-bar-top").css({"transform":"rotate(45deg)","-webkit-transform":"rotate(45deg)","-ms-transform":"rotate(45deg)"});
@@ -135,11 +135,15 @@ function navToggle() {
         $(".nav-body>ul").slideUp(200);
         $(".nav-body>ul").css({"transform":"rotateX(90deg)","-webkit-transform":"rotateX(90deg)","-ms-transform":"rotateX(90deg)"});
 
-        $(".nav-body-shop").css({
+        $(".nav-body-shop").show().css({
             "transform": "translateX(0px)",
             "-webkit-transform": "translateX(0px)",
             "-ms-transform": "translateX(0px)"
         });
+
+        $("body").height($(document).height());
+        $("body").css({"overflow-y":"auto",'position':'static'});
+        $(".nav-body>ul").height(44);
     }
 }
 
