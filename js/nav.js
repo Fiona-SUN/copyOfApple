@@ -23,7 +23,7 @@ function windowRez(){
             $("body").height($(document).height());
         }
 
-        $("body").css({"overflow-y":"auto"});
+        $("body").css({"overflow-y":"auto",'position':'static'});
         $(".nav-body>ul").height(44);
 
         $(".ser-wrapper").hide();
@@ -45,7 +45,7 @@ function windowRez(){
         if( ($("#nav-toggle-btn").data("toggle") == "open") || ($("#nav-toggle-btn").data("toggle") == "wait")){
 
             $("body").height($(window).height());
-            $("body").css({"overflow-y":"hidden"});
+            $("body").css({"overflow-y":"hidden",'position':'fixed'});
 
             $(".nav-body-shop").css({
                 "transform": "translateX(50px)",
