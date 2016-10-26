@@ -21,15 +21,24 @@
 贴上页面效果图
     
 - 主页
+
     + 大屏幕
+    
     ![apple大屏幕图](https://Fiona-SUN.github.io/photos/apple-home-large.png)
+    
     + 小屏幕
+    
     ![apple小屏幕图](https://Fiona-SUN.github.io/photos/apple-home-small.png)
 
--ipad页面
-    + 大屏幕
-    ![ipad大屏幕图](https://Fiona-SUN.github.io/photos/apple-ipad-large.png)
-    + 小屏幕
+
+- ipad页面
+    
+    * 大屏幕
+    
+    ![ipad大屏幕图](https://fiona-sun.github.io/photos/apple-ipad-large.png)
+    
+    * 小屏幕
+    
     ![ipad小屏幕图](https://Fiona-SUN.github.io/photos/apple-ipad-small.png)
     
 >post in 2016/10/26
